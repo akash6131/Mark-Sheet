@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <title>Hindusthan Mark Sheet</title>
+    <style>
+        body{
+            padding:150px;
+        }
+        .section{
+            background-color:rgba(255, 255, 19, 0.518);
+            padding:20px;
+        }
+       #qr{
+        height:70px;
+        width:70px;
+        text-align: center;
+       }
+       #photo{
+        height:140px;
+        width:100px;
+        text-align: center;
+       }
+       #head{
+        text-align: center;
+        font-size: xx-large;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       #head1{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: medium;
+       }
+       span{
+        padding:0px 25px;
+       }
+       #col{
+        border:1px solid black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       #cont2{
+        margin-top:10px;
+       }
+       #col1{
+        border:1px solid black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px 12px 0px 12px;
+       }
+       #col2{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+       }
+       #cont3{
+        border:1px solid black;
+       }
+       #col3{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+       }
+       #cont4{
+        border:1px solid black;
+       }
+       #cont5{
+        border:1px solid black;
+       }
+       #col4{
+        border:1px solid black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:25px 15px 25px 15px;
+       }
+       #col5{
+        border:1px solid black;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:25px 15px 25px 15px;
+       }
+       #col6{
+        margin:100px 0px 0px 0px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+       }
+       input{
+        width:100%;
+       }
+       #col7{
+        text-align:center;
+        font-size:13px;
+        border-top:2px solid black;
+        border-right:1px solid black;
+       }
+       #col8{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border-right:1px solid black;
+       }
+       #col9{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border-right:1px solid black;
+       }
+       #col11{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border-left:1px solid black;
+       }
+       #col12{
+        border-top:2px solid black;
+       }
+       #total-grand{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+       }
+       #total-in-words{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+       }
+       #result{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border:1px solid black;
+
+       }
+       #percentage{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border:1px solid black;
+
+       }
+       #grade{
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        padding:10px;
+        border:1px solid black;
+
+       }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                    <div class="col-4"><span>SL.NO :</span><span>0000000</span></div>
+                    <div class="col-1"></div>
+                    <div class="col-5"><img id="photo" src="/images - Copy.png"></div>
+                    <div class="col-1"></div>
+                    <div class="col-1"><img id="qr" src="/photo/Untitled 1 (1).png"></div>
+                    <div class="row">
+                        <div class="col-2"></div>
+                        <div class="col-8"id="head">Hindusthan College of Engineering and Technology</div>
+                        <div class="col-2"></div>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6" id="head1">An Autonomous Institution</div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6" id="head1"> Affiliated to Anna University | Approved by AICTE
+                                Accredited by NBA and NAAC with "A++" grade</div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6" id="head1">Valley Campus, Coimbatore-641032</div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" id="cont1">
+                <div class="row">
+                        <div class="col-6"id="col"><span>Name of the Candidate</span><br><br><span>Akash S M</span></div>
+                        <div class="col-6"id="col"><span>Course name</span><br><br><span>Electronic and Communication Engineering</span></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3"id="col"><span>Register Numbar</span><br><br><span>720721106005</span></div>
+                        <div class="col-3"id="col"><span>Enrollment Number</span><br><br><span>U21106005</span></div>
+                        <div class="col-6"id="col"><span>Authorised Training Centre</span><br><br><span>CEO of Hicet</span></div>
+                    </div>
+                    </div>
+                    <div class="container" id="cont2">
+                    <div class="row">
+                        <div class="col-2"id="col1"><span>Subject code</span><br><br><span>Akash S M</span></div>
+                        <div class="col-5"id="col1"><span>Subject name</span><br><br><span>Electronic and Communication Engineering</span></div>
+                        <div class="col-2"id="col1"><br><span>Max Marks</span></div>
+                        <div class="col-3"id="col1"><span>Mark obtained in figures</span><br><br>
+                        <div class="row">
+                            <div class="col-4" id="col7">Theory</div>
+                            <div class="col-4" id="col7">Practical</div>
+                            <div class="col-4" id="col12">Total</div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="container" id="cont3">
+                    <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory1" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical1" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total1">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory2" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical2" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total2">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory3" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical3" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total3">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory4" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical4" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total4">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory5" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical5" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total5">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2" id="col2"><span>21EC4201</span></div>
+                            <div class="col-5" id="col8"><span>ELECTRO MAGNETIC FIELDS AND WAVES</span></div>
+                            <div class="col-2" id="col9">100</div>
+                            <div class="col-3" id="col2">
+                                <div class="row">
+                                    <div class="col-4"><input type="number" class="theory-marks" id="theory6" oninput="calculateTotal()"></div>
+                                    <div class="col-4"><input type="number" class="practical-marks" id="practical6" oninput="calculateTotal()"></div>
+                                <div class="col-4" id="total6">00</div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="container" id="cont4">
+                            <div class="row">
+                                <div class="col-2" id="col3"><span>Grand Total</span></div>
+                                <div class="col-2" id="total-grand">000</div>
+                                <div class="col-8"></div>
+                            </div>
+                        </div>
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-3" id="col4"><span>Month and Year of Examination</span></div>
+                                    <div class="col-4" id="col4"><span>No of Subjects Offered</span></div>
+                                    <div class="col-1" id="col4">Result</div>
+                                    <div class="col-2" id="col4">Percentage</div>
+                                    <div class="col-2" id="col4">Grade</div>
+                                </div>
+                                    <div class="row">
+                                        <div class="col-3" id="col5"><span>May 2021</span></div>
+                                        <div class="col-4" id="col5"><span id="subjects-offered">T5 + P2 = 6</span></div>
+                                        <div class="col-1" id="result">100</div>
+                                        <div class="col-2" id="percentage"></div>
+                                        <div class="col-2" id="grade">ZERO ZERO</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-2" id="col6"><span>Date</span></div>
+                                        <div class="col-2" id="col6">(Date of result)</div>
+                                        <div class="col-5" id="col6"></div>
+                                        <div class="col-3" id="col6">(Signature of Deputy Controller of Examination)</div>
+                                        </div>
+                                        </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function calculateTotal() {
+    let totalGrand = 0;
+    let totalTheory = 0;
+    let totalPractical = 0;
+    let subjectCount = document.querySelectorAll('.theory-marks').length;
+
+    // Loop through each subject to calculate total marks
+    for (let i = 1; i <= subjectCount; i++) {
+        let theoryMarks = parseInt(document.getElementById(`theory${i}`).value) || 0;
+        let practicalMarks = parseInt(document.getElementById(`practical${i}`).value) || 0;
+        let totalMarks = theoryMarks + practicalMarks;
+
+        document.getElementById(`total${i}`).textContent = totalMarks;
+
+        totalTheory += theoryMarks;
+        totalPractical += practicalMarks;
+        totalGrand += totalMarks;
+    }
+
+    // Calculate total max marks (both theory and practical for each subject)
+    let totalMaxMarks = 100 * subjectCount; // Each subject has theory and practical
+
+    // Calculate percentage
+    let percentage = (totalGrand / totalMaxMarks) * 100;
+    document.getElementById('percentage').textContent = percentage.toFixed(2) + '%';
+
+    // Calculate grade based on percentage
+    let grade = calculateGrade(percentage);
+    document.getElementById('grade').textContent = grade;
+
+    // Display total grand and its words
+    document.getElementById('total-grand').textContent = totalGrand;
+    document.getElementById('total-in-words').textContent = convertNumberToWords(totalGrand);
+}
+
+function calculateGrade(percentage) {
+    if (percentage >= 90) return 'A+';
+    if (percentage >= 80) return 'A';
+    if (percentage >= 70) return 'B+';
+    if (percentage >= 60) return 'B';
+    if (percentage >= 50) return 'C+';
+    if (percentage >= 40) return 'C';
+    return 'RU'; // Assume RU is a failing grade
+}
+
+function convertNumberToWords(num) {
+    const ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten"];
+    const teens = ["Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"];
+    const tens = ["", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"];
+    const thousands = ["", "Thousand"];
+
+    if (num === 0) return "Zero";
+
+    let words = '';
+    let index = 0;
+
+    while (num > 0) {
+        let str = '';
+        let n = num % 100;
+        if (n > 10 && n < 20) {
+            str = teens[n - 11];
+        } else {
+            str = ones[n % 10];
+            n = Math.floor(n / 10);
+            str = tens[n % 10] + (str ? ' ' + str : '');
+        }
+
+        if (str) {
+            words = str + ' ' + thousands[index] + ' ' + words;
+        }
+        num = Math.floor(num / 100);
+        index++;
+    }
+
+    return words.trim();
+}
+
+    </script>
+    </html>
